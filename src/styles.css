@@ -1,0 +1,127 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    width: 80%;
+    max-width: 600px;
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+h2, h3, h4, h5, h6 {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* Button Styling */
+button {
+    padding: 7px 16px;  /* Slightly increased size */
+    font-size: 0.9rem;   /* Increased text size */
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Hover Effects */
+button:hover {
+    background-color: #388e3c;
+}
+
+/* Delete Button */
+button.delete-btn {
+    background-color: #e53935;
+    color: white;
+}
+
+button.delete-btn:hover {
+    background-color: #c62828;
+}
+
+/* Edit Button */
+button.edit-btn {
+    background-color: #ff9800;
+    color: white;
+}
+
+button.edit-btn:hover {
+    background-color: #e68900;
+}
+
+/* Small Buttons for "Add State" and "Add City" */
+button.add-small {
+    padding: 6px 12px !important;  /* Slightly increased size */
+    font-size: 0.85rem !important;  /* Increased text size */
+    background-color: #4caf50;
+    width: auto !important;
+    min-width: unset !important;
+    max-width: 130px !important; /* Slightly wider */
+    text-align: center;
+    display: inline-block !important;
+    align-self: center !important;
+}
+
+button.add-small:hover {
+    background-color: #388e3c;
+}
+
+/* Card-Style Containers */
+.section, .sub-section {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #252525;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.05);
+}
+
+/* List Items */
+.item {
+    background: #2a2a2a;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Fix Alignment Issues */
+.sub-section, .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center elements */
+    justify-content: center; /* Ensure proper placement */
+}
+
+/* Buttons inside items */
+.item div {
+    display: flex;
+    gap: 10px; /* Increase spacing */
+    align-self: center; /* Center buttons */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
